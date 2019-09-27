@@ -8,7 +8,7 @@ Uses the Tampermonkey extension ([Firefox](https://addons.mozilla.org/en-US/fire
 
 * Before:
 
-![workflow-before.png]
+![](workflow-before.png)
 
 * After:
 
