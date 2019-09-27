@@ -8,6 +8,8 @@ Uses the Tampermonkey extension ([Firefox](https://addons.mozilla.org/en-US/fire
 
 * Before:
 
+![workflow-before.png]
+
 * After:
 
 ## Change Cancel button to be more dangerous
