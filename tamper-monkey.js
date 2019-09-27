@@ -16,6 +16,12 @@
     const log = console.log
 
     log('Reloaded State')
+
+    // Operate UI is an SPA. Some things should be done once per "app load", like mutating the Workflow drop-down
+    // Set them to be idempotent: false.
+    // Other things need to be done on each route change, like changing the Cancel button.
+    // Set them to be idempotent: true
+
     const modifications = [
         {
             name: 'Change Cancel button to red text CANCEL',
@@ -50,6 +56,7 @@
         }
     ]
 
+    // Timing logic to deal with async data-loading, and SPA nature of Operate UI
 
     // Implements a simple exponential back-off
     function modify(mod, delay) {
@@ -82,8 +89,6 @@
         listener()
     });
 
-
-
     listener()
 
     function listener() {
@@ -97,7 +102,4 @@
         modifications.forEach(modify)
         globalDelay = 0
     }
-
-
 })();
-
