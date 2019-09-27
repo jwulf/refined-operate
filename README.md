@@ -8,13 +8,19 @@ Uses the Tampermonkey extension ([Firefox](https://addons.mozilla.org/en-US/fire
 
 * Before:
 
-![](workflow-before.png)
+![](workflows-before.png)
 
 * After:
+
+![](workflows-after.png)
 
 ## Change Cancel button to be more dangerous
 
 * Before:
 
+![](cancel-before.png)
+
 * After:
+
+![](cancel-after.png)
 
